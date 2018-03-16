@@ -12,7 +12,8 @@
         <li>Name: <%= comedian.name %></li>
         <li>Age: <%= comedian.age %></li>
         <li>Specials:</li>
-        <%= specials.find_by("comedian_id = 1").name %></li>
+        <!-- <%= specials.find_by("comedian_id = 1").name %></li> -->
+        <%= specials.find_by(comedian_id: comedian.id).name %></li>
       </ul>
     <% end %>
   </body>
