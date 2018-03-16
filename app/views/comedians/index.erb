@@ -11,7 +11,7 @@
       <ul>
         <li>Name: <%= comedian.name %></li>
         <li>Age: <%= comedian.age %></li>
-        <li>Specials:</li>
+        <li>Total Specials: <%= comedian.specials.count %> </li>
         <ul>
           <% comedian.specials.each do |special| %>
             <li><%= special.name %></li>
