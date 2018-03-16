@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Comedians</title>
+  </head>
+  <body>
+    <h3>Comedians:</h3>
+    Average Age: <%= Comedian.average(:age).to_i %>
+    <% all_comedians.each do |comedian| %>
+      <ul>
+        <li>Name: <%= comedian.name %></li>
+        <li>Age: <%= comedian.age %></li>
+      </ul>
+    <% end %>
+  </body>
+</html>
