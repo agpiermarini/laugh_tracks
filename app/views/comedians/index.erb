@@ -13,12 +13,10 @@
         <li>Age: <%= comedian.age %></li>
         <li>Specials:</li>
         <ul>
-        <% specials.each do |special| %>
-          <% if special.comedian_id == comedian.id %>
+          <% comedian.specials.each do |special| %>
             <li><%= special.name %></li>
           <% end %>
-        <% end %>
-      </ul>  
+      </ul>
       </ul>
     <% end %>
   </body>
